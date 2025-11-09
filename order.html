@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - AfroStyle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fas fa-crown"></i>
+                    AfroStyle
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="order.html" class="active">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Place Your Order</h2>
+                
+                <div class="order-form">
+                    <form action="#" method="POST">
+                        <h3>Product Selection</h3>
+                        <div class="form-group">
+                            <label for="product">Select Product *</label>
+                            <select id="product" name="product" required>
+                                <option value="">Choose a product</option>
+                                <optgroup label="Women's Collection">
+                                    <option value="ankara-dress">Traditional Ankara Dress - ₦15,000</option>
+                                    <option value="african-gown">African Print Gown - ₦18,000</option>
+                                    <option value="kente-outfit">Kente Style Outfit - ₦22,000</option>
+                                </optgroup>
+                                <optgroup label="Men's Collection">
+                                    <option value="native-attire">Men's Native Attire - ₦20,000</option>
+                                    <option value="agbada-set">Agbada Set - ₦25,000</option>
+                                    <option value="senator">Traditional Senator - ₦18,500</option>
+                                </optgroup>
+                                <optgroup label="Children's Collection">
+                                    <option value="kids-wear">Kids Traditional Wear - ₦8,000</option>
+                                    <option value="ankara-set">Children's Ankara Set - ₦7,500</option>
+                                    <option value="baby-outfit">Baby Traditional Outfit - ₦6,000</option>
+                                </optgroup>
+                                <optgroup label="Shoes Collection">
+                                    <option value="leather-sandals">Handmade Leather Sandals - ₦5,000</option>
+                                    <option value="beaded-shoes">Beaded Women Shoes - ₦7,000</option>
+                                    <option value="mens-shoes">Men's Casual Shoes - ₦6,000</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="quantity">Quantity *</label>
+                                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="size">Size</label>
+                                <select id="size" name="size">
+                                    <option value="">Select Size</option>
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                    <option value="xlarge">X-Large</option>
+                                    <option value="custom">Custom Size</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="color">Color Preference</label>
+                            <input type="text" id="color" name="color" placeholder="e.g., Red, Blue, Multi-color">
+                        </div>
+
+                        <h3 style="margin-top: 3rem;">Shipping Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Delivery Address *</label>
+                                <input type="text" id="address" name="address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="notes">Special Instructions</label>
+                            <textarea id="notes" name="notes" rows="3" placeholder="Any special delivery instructions or custom requirements..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%; font-size: 1.2rem; padding: 20px;">
+                            Place Order
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: #f8f9fa; padding: 40px 0;">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Secure Payment</h3>
+                        <p>Your payment information is protected</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-truck"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>2-5 business days within Lagos</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-undo"></i>
+                        <h3>Easy Returns</h3>
+                        <p>30-day return policy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AfroStyle</h3>
+                <p>Your trusted partner for authentic African fashion and style.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Fashion Street, Lagos</p>
+                <p><i class="fas fa-phone"></i> +234 812 345 6789</p>
+                <p><i class="fas fa-envelope"></i> info@afrostyle.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AfroStyle. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
